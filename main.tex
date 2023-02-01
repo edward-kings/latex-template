@@ -1,0 +1,25 @@
+\documentclass[letterpaper]{article} % report or article switch
+
+\input{lib/packages.tex}
+\input{lib/bib.tex}
+\input{lib/blocks.tex}
+\input{lib/code.tex}
+\input{lib/colors.tex}
+\input{lib/page.tex}
+
+\newcommand{\curso}{CÓDIGO-1} % Código del curso
+\author{Autor}
+\title{TÍTULO}
+
+\begin{document}
+
+\input{chapters/cover.tex}
+\input{chapters/index.tex}
+\input{chapters/chapter-1.tex}
+
+\newpage
+
+\nocite{*}
+\bibliography{bibliography}
+
+\end{document}
