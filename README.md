@@ -6,7 +6,7 @@ La plantilla de LaTeX que uso para mis tareas en la universidad
 ## Características / Features
 
 1. Portada / Title page con logo de la Universidad y departamento a elección.
-2. Soporte para herramientas matemáticas con correcta enumeración
+2. Soporte para herramientas matemáticas con correcta enumeración.
 3. Soporte para código fuente de varios lenguajes gracias a [minted](https://www.overleaf.com/learn/latex/Code_Highlighting_with_minted).
 4. Soporte para bibliografía en formato APA automatizado.
 
