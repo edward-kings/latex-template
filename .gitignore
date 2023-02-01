@@ -11,6 +11,7 @@
 *.cb
 *.cb2
 .*.lb
+main.tex
 
 ## Intermediate documents:
 *.dvi
@@ -274,3 +275,5 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+build/
+main.tex
