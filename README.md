@@ -19,6 +19,7 @@ Podemos trabajar con esta plantilla directamente en [Overleaf](https://www.overl
 ### Trabajar de manera local
 
 1. Instalar [TexLive](https://www.tug.org/texlive/)
+2. Instalar Python y Pygments (`pip install Pygments`) si vamos a usar el paquete *minted*.
 2. (Opcional) Instalar la extensión [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) en Visual Studio
 3. Compilar con la receta de *pdftex* para un documento simple. Compilar dos veces *pdftex* para enumerar correctamente referencias y compilar junto a *bibtex* para obtener una bibliografía correctamente (Los botones y macros para *LaTeX Workshop* vienen ya hechos en la carpeta de Workpace `[.vscode]`)
 4. (Opcional) Si se desea utilizar *synctex* con visualizadores externos de *PDF* recomiendo [Esta guía](https://github.com/James-Yu/LaTeX-Workshop/wiki/View#using-synctex-with-an-external-viewer)
