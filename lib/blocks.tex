@@ -1,0 +1,31 @@
+% Theorem blocks
+
+\theoremstyle{plain}
+\newtheorem{thm}{Teorema} % Theorem
+\newtheorem{cor}[thm]{Corolario} % Corollary
+\newtheorem{conj}[thm]{Conjetura} % Conjecture
+\newtheorem{prop}[thm]{Proposición} % Proposition
+\newtheorem{lemma}[thm]{Lema} % Lemma
+\newtheorem{qn}[thm]{Pregunta} % Question
+\newtheorem{claim}[thm]{Afirmación} % Claim
+
+\theoremstyle{definition}
+\newtheorem{prope}[thm]{Propiedad} % Property
+\newtheorem{defn}[thm]{Definición} % Definition
+\newtheorem{cond}[thm]{Condiciones} % Conditions
+\newtheorem*{notn}{Notación} % Notation
+\newtheorem*{solu}{Solución} % Solution
+
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Observación} % Remark
+\newtheorem*{rems}{Observaciones} % Remarks
+\newtheorem*{ex}{Ejemplo} % Example
+\newtheorem*{exs}{Ejemplos} % Examples
+\newtheorem*{exer}{Ejercicio} % Exercise
+\newtheorem*{exers}{Ejercicios} % Exercises
+
+\numberwithin{equation}{section}
+\numberwithin{thm}{section}
+
+
+\renewenvironment{proof}{\noindent{\it Demostraci\'on.}}{\hfill$\blacksquare$} % Proof

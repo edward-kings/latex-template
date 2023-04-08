@@ -1,0 +1,305 @@
+% References
+
+@misc{opc:EduardoReyes,
+    author			= {Eduardo Reyes},
+    title			= {Perfil de Eduardo Reyes en Github},
+    howpublished	= {\url{https://github.com/edward-kings}},
+    year			= {2023},
+    language        = {spanish}
+}
+
+% ARTICULO - Un artículo de una revista o un diario.
+%  obl:   author, title, journal, year.
+%  ops:   volume, number, pages, month, note.
+%
+@article{art:articulo,
+    author			= {Nombre autor},
+    title			= {Titulo de articulo},
+    journal			= {Revista},
+    volume			= {v*},
+    number			= {n*},
+    pages			= {xx--yy*},
+    year			= {20XX},
+    month			= {mes-nom*},
+    note			= {Notas y observaciones*},
+    language        = {spanish},
+}
+
+
+
+% LIBRO - Un libro publicado
+%  obl:   author/editor, title, publisher, year.
+%  ops:   volume/number, series, address, edition, month, note.
+%
+@book{lib:libro,
+    author			= {Nombre autor},
+    
+    title			= {Titulo de libro},
+    publisher		= {Editor},
+    volume			= {v*},
+    
+    series			= {s*},
+    address			= {Dirección del editor},
+    edition			= {e*},
+    year			= {20XX},
+    month			= {mes-nom*},
+    note			= {Notas y observaciones*},
+    language        = {spanish},
+}
+%   editor		    = {Editor (en ves de autor)},
+%	number			= {n* (en ves de volumen)},
+
+
+
+% FOLLETO - Un trabajo encuadernado sin un editor o patrocinador nombrado.
+%  obl:   title.
+%  ops:   author, howpublished, address, month, year, note.
+%
+@booklet{fll:folleto,
+    author			= {Nombre autor*},
+    title			= {Titulo de folleto},
+    howpublished	= {Como de publico*},
+    address			= {Dirección*},
+    year			= {20XX*},
+    month			= {mes-nom*},
+    note			= {Notas y observaciones*},
+    language        = {spanish},
+}
+
+
+
+% CONFERENCIA - Conferencia.
+%  obl:   author, title, booktitle, year.
+%  ops:   editor, volume/number, series, pages, address, month, organization, publisher, note.
+%
+@conference{con:conferencia,
+    author			= {Nombre autor},
+    title			= {Titulo de conferencia},
+    booktitle		= {Titulo de libro de conferencia},
+    editor			= {Editor},
+    volume			= {v*},
+    
+    series			= {s*},
+    pages			= {xx--yy*},
+    address			= {Dirección*},
+    year			= {20XX},
+    month			= {mes-nom*},
+    publisher		= {Editor*},
+    note			= {Notas y observaciones*},
+    language        = {spanish},
+}
+%	number			= {n* (en ves de volumen)},
+
+
+
+% ENTRE_LIBRE - Una sección de un libro sin título propio.
+%  obl:   author/editor, title, chapter and/or pages, publisher, year.
+%  ops:   volume/number, series, type, address, edition, month, note.
+%
+@inbook{ent:entre_libro,
+	author			= {Nombre autor},
+	
+	title			= {Titulo de libro},
+	chapter			= {Cap-n},
+	pages			= {xx--yy},
+	publisher		= {Editor},
+	volume			= {v*},
+	
+	series			= {s*},
+	type			= {tipo*},
+	address			= {Dirección*},
+	edition			= {e*},
+	year			= {20XX},
+	month			= {mes-nom*},
+	note			= {Notas y observaciones*},
+    language        = {spanish},
+}
+%   editor		    = {Editor (en ves de autor)},
+%	number			= {n* (en ves de volumen)},
+
+
+
+% SECCION_LIBRO - Una sección de un libro que tiene su propio título.
+%  obl:   author, title, booktitle, publisher, year.
+%  ops:   editor, volume/number, series, type, chapter, pages, address, edition, month, note.
+%
+@incollection{sec:seccion_libro,
+	author			= {Nombre autor},
+	title			= {Titulo de sección},
+	booktitle		= {Titulo de libro},
+	publisher		= {Editor},
+	editor			= {Editor*},
+	volume			= {v*},
+	
+	series			= {s*},
+	type			= {tipo*},
+	chapter			= {Cap-n*},
+	pages			= {xx--yy*},
+	address			= {Dirección*},
+	edition			= {e*},
+	year			= {20XX},
+	month			= {mes-nom*},
+	note			= {Notas y observaciones*},
+    language        = {spanish},
+}
+%	number			= {n* (en ves de volumen)},
+
+
+
+% ARTICULO_EN_ACTA - Un artículo en las actas de una conferencia.
+%  obl:   author, title, booktitle, year.
+%  ops:   editor, volume/number, series, pages, address, month, organization, publisher, note.
+%
+@inproceedings{ina:articulo_en_acta,
+	author			= {Nombre autor},
+	title			= {Titulo del articulo en acta de conferencia},
+	booktitle		= {Titulo del libro},
+	volume			= {v*},
+	
+	series			= {s*},
+	pages			= {xx--yy*},
+	address			= {Dirección*},
+	organization	= {Patrocinador},
+	publisher		= {Editor*},
+	year			= {20XX},
+	month			= {mes-nom*},
+	note			= {Notas y observaciones*},
+    language        = {spanish},
+}
+%	number			= {n* (en ves de volumen)},
+
+
+
+% MANUAL - manual técnicoTechnical manual
+%  obl:   title.
+%  ops:   author, organization, address, edition, month, year, note.
+%
+@manual{man:manual,
+	title			= {Titulo del manual},
+	author			= {Nombre autor*},
+	organization	= {Patrocinador*},
+	address			= {Dirección*},
+	edition			= {e*},
+	year			= {20XX---},
+	month			= {mes-nom*},
+	note			= {Notas y observaciones*},
+    language        = {spanish},
+}
+
+
+
+% TESIS - tesis de maestria.
+%  obl:   author, title, school, year.
+%  ops:   type (eg. "diploma thesis"), address, month, note.
+%
+@mastersthesis{tes:tesis,
+    author			= {Nombre autor},
+    title			= {Titulo de tesis},
+    school			= {Nombre de universidad},
+    type			= {Tesis de diplomado*},
+    address			= {Dirección*},
+    year			= {20XX},
+    month			= {mes-nom*},
+    note			= {Notas y observaciones*},
+    language        = {spanish},
+}
+
+
+
+% OPCIONAL - Plantilla útil para otros tipos de publicación.
+%  obl:   none
+%  ops:   author, title, howpublished, month, year, note.
+%
+@misc{opc:opcional,
+    author			= {Autor*},
+    title			= {Titulo*},
+    howpublished	= {Como de publico*},
+    year			= {20XX*},
+    month			= {mes-nom*},
+    note			= {Notas y observaciones*},
+    language        = {spanish},
+}
+
+% WEB - Ejemplo
+%
+@misc{web:web,
+    author			= {Wikipedia\textsuperscript{\textregistered}},
+    title			= {BibTeX},
+    howpublished	= {\path{https://es.wikipedia.org/wiki/BibTeX}},
+    year			= {2018},
+    month			= {mes-nomagosto},
+    note			= {Accedido en junio de 2019 (ejemplo)},
+    language        = {spanish},
+}
+
+
+
+% PHD_TESIS - tesisi de doctorado.
+%  obl:   author, title, year, school.
+%  ops:   address, month, keywords, note.
+%
+@phdthesis{phd:phd_tesis,
+	author			= {Nombre autor},
+	title			= {Titulo de tesis de PHD},
+	school			= {Nombre de universidad},
+	address			= {Dirección*},
+	year			= {20XX},
+	month			= {mes-nom*},
+	keywords		= {Palabras clave*},
+	note			= {Notas y observaciones*},
+    language        = {spanish},
+}
+
+
+
+% ACTA - Las actas de una conferencia.
+%  obl:   title, year.
+%  ops:   editor, volume/number, series, address, month, organization, publisher, note.
+%
+@proceedings{act:acta,
+	title			= {Titulo de acta},
+	editor			= {Editor*},
+	volume			= {v*},
+	
+	series			= {s*},
+	address			= {Dirección*},
+	organization	= {*},
+	publisher		= {Editor*},
+	year			= {20XX},
+	month			= {mes-nom*},
+	note			= {Notas y observaciones*},
+    language        = {spanish},
+}
+%	number			= {n* (en ves de volumen)},
+
+% INFORME_TECNICO - Informe técnico de la institución educativa, comercial o de normalización.
+%  obl:   author, title, institution, year.
+%  ops:   type, number, address, month, note.
+%
+@techreport{inf:informe_tecnico,
+    author			= {Nombre autor},
+    title			= {Titulo de informe},
+    institution		= {Institución},
+    type			= {tipo*}, 
+    number			= {n*},
+    address			= {Dirección*},
+    year			= {20XX},
+    month			= {mes-nom*},
+    note			= {Notas y observaciones*},
+    language        = {spanish},
+}
+
+
+
+% Inedito - Un artículo inédito, libro, tesis, etc.
+%  obl:   author, title, note.
+%  ops:   month, year.
+%
+@unpublished{Xunpublished,
+	author			= {Nombre autor},
+	title			= {Titulo de articulo inédito},
+	year			= {20XX*},
+	month			= {mes-nom*},
+	note			= {Notas y observaciones},
+    language        = {spanish},
+}

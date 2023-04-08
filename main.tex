@@ -1,0 +1,27 @@
+\documentclass[letterpaper]{article} % report or article switch
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+
+\input{lib/packages.tex}
+\input{lib/bib.tex}
+\input{lib/blocks.tex}
+\input{lib/code.tex}
+\input{lib/colors.tex}
+% \input{lib/page.tex} % top and bottom page borders (optional)
+
+\newcommand{\curso}{Curso}
+\author{Nombre Apellido}
+\title{TÍTULO}
+
+\begin{document}
+
+\input{chapters/cover.tex}
+\input{chapters/index.tex}
+\input{chapters/chapter-1.tex}
+
+\newpage
+
+\nocite{*} 
+\bibliography{references}
+
+\end{document}
