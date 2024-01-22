@@ -1,25 +1,10 @@
 % Source code style
 
-\usepackage[outputdir=build]{minted}
-\usepackage{mdframed}
-\usemintedstyle{manni}
+\captionsetup[listing]{position=bottom}
 
-\renewcommand\listoflistingscaption{Lista de fragmentos de código}
 \renewcommand\listingscaption{Código}
+
 \AtBeginDocument{\renewcommand*{\thelstlisting}{\thesection.\arabic{lstlisting}}}
 
-\newenvironment{codecaption}{\captionsetup{type=listing}}{}
-
-\newenvironment{mintedcode}[1]
-{%
-  \VerbatimEnvironment
-  \begin{mdframed}[usetwoside=false, linecolor=black, topline=true, bottomline=true, leftline=false, rightline=false, userdefinedwidth=\textwidth]
-  \begin{minted}[escapeinside=@@]{#1}%
-}
-{%
-  \end{minted}%
-  \end{mdframed}%
-}
-
-\newmdenv[linecolor=black, topline=true, bottomline=true, leftline=false, rightline=false, userdefinedwidth=\textwidth]{lw}
-\newenvironment{inputcode}{\begin{lw}}{\end{lw}}
+\BeforeBeginEnvironment{minted}{\begin{mdframed}}
+\AfterEndEnvironment{minted}{\end{mdframed}}

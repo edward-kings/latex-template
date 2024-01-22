@@ -97,5 +97,6 @@
     "*.pygtex",
     "*.pygstyle",
     "*.fdb_latexmk"    
-  ]
+  ],
+  "editor.wordWrap": "on"
 }

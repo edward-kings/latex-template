@@ -1,16 +1,15 @@
 \section{Introducción}
 
-\noindent
 Hola, este es el primer vistazo a un template de \LaTeX{} en desarrollo. Entre sus características destacables encontramos su dualidad de uso, ya sea para artículos o reportes\footnote{El uso de reporte puede ser muy adecuado para un formato de libro gracias a su jerarquía de \textit{Capítulos}} de \LaTeX{}, la creación automática de una portada simple con logo y una tabla de contenidos.
 
-La cantidad de paquetes es muy reducida y los tiempos de compilación son extremadamente rápidos. Más guías de uso se pueden encontrar en el código de este proyecto. Futuras actualizaciones incluirán un manual de uso más detallado. 
+La cantidad de paquetes es muy reducida y los tiempos de compilación son suficientemente rápidos. Más guías de uso se pueden encontrar en el código de este proyecto. Futuras actualizaciones incluirán un manual de uso más detallado. 
 
-Más información de uso en el respectivo repositorio de Github \cite{opc:EduardoReyes}.
+Más información de uso en el respectivo repositorio de Github \cite{opc:autor}.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.25\textwidth]{src/img/logo/author.pdf}
-    \caption{Eduardo Reyes}
+    \includegraphics[width=0.15\textwidth]{src/img/logo/author.pdf}
+    \caption{Autor}
     \label{fig:authorvector}
 \end{figure}
 
@@ -18,10 +17,9 @@ Más información de uso en el respectivo repositorio de Github \cite{opc:Eduard
 
 \section{Matemáticas}
 
-\noindent
-Esta plantilla posee amplio soporte para todo lo que respecta a Matemáticas y código fuente de diversos lenguajes. Por el apartado de Matemáticas es posible realizar bloques automáticos de Teoremas, Corolarios, Conjeturas, Proposiciones, Lemas, Preguntas, Afirmaciones, Propiedades, Definiciones, Condiciones, Notaciones, Soluciones, Observaciones, Ejemplos y Ejercicios. Estos bloques cuentan con un sistema de enumeración automática por capítulo, lo que será de gran ayuda para textos largos.
+Esta plantilla posee amplio soporte para todo lo que respecta a Matemáticas y código fuente de diversos lenguajes. Por el apartado de Matemáticas es posible realizar bloques automáticos de Teoremas, Corolarios, Conjeturas, Proposiciones, Lemas, Preguntas, Afirmaciones, Propiedades, Definiciones, Condiciones, Notaciones, Soluciones, Observaciones, Ejemplos y Ejercicios. Estos bloques cuentan con un sistema de enumeración automático, lo que será de gran ayuda para textos largos. Ejemplo:
 
-Veamos su uso:
+
 
 \begin{thm}[Algebra de derivadas]
     Si $f$ y $g$ son diferenciables en $x_0$ y $\alpha \in \mathbb{R}$, entonces $f \pm g$, $\alpha g$, $fg$ y $f/g$ con $g(x_0) \neq 0$ son también diferenciables y además:
@@ -63,53 +61,53 @@ Veamos su uso:
     \end{enumerate}
 \end{exs}
 
-\newpage
-
 \section{Ejemplos de código}
 
-\noindent
-Si bien el código en \texttt{PDF} no suele ser muy agradable de manejar, es una característica que existe y tiene coloreado gracias a \texttt{Pygments} (\mintinline{text}|pip install Pygments|). y el paquete \texttt{minted} de \LaTeX{}. Veamos un ejemplo de código en \texttt{C}: \\
+Si bien el código en \texttt{PDF} no suele ser muy agradable de manejar, es una característica que existe y tiene coloreado gracias a \href{https://pypi.org/project/Pygments/}{\texttt{Pygments}} (\mintinline{text}|pip install Pygments|). y el paquete \href{https://ctan.org/pkg/minted}{\texttt{minted}} de \LaTeX{}. Veamos un ejemplo de código en \texttt{C}:
 
-\begin{codecaption}
-    \begin{mintedcode}{c}
-        #include <stdio.h>
-        int main() {    
+\begin{listing}[H]
+    \centering
+    \inputminted[frame=single]{c}{src/code/helloworld.c}
+    \label{lst:the-code}
+    \caption{Código de ``Hello World'' en C}
+\end{listing}
 
-            int number1, number2, sum;
-            
-            printf("Enter two integers: ");
-            scanf("%d %d", &number1, &number2);
+El código anterior es proporcionado por el archivo \texttt{helloworld.c}, mientras que el siguiente, escrito en \texttt{Python} simplemente se escribe en el entorno básico del paquete:
 
-            // calculating sum
-            sum = number1 + number2;      
-            
-            printf("%d + %d = %d", number1, number2, sum);
-            return 0;
-        }
-    \end{mintedcode}
+\begin{listing}[H]
+\begin{minted}{python}
+n1 = float(input("Ingrese número uno: "))
+n2 = float(input("Ingrese numero dos: "))
+suma = n1 + n2
+
+print("La suma es: ", suma)
+\end{minted}
+\label{}
 \caption{Ejemplo de suma de dos enteros en C}
-\end{codecaption}
-
-Ahora un ejemplo en \texttt{SQL}: \\
-
-\begin{codecaption}
-    \begin{mintedcode}{sql}
-        SELECT nombre AS planeta
-        FROM Planeta
-        UNION ALL
-        SELECT planeta
-        FROM Satélite  
-    \end{mintedcode}
-\caption{Ejemplo de consulta en SQL}
-\end{codecaption}
+\end{listing}
 
 \newpage
 
-Además es posible insertar código desde archivos gracias a \texttt{inputminted}: \\
+\section{Algoritmos}
 
-\begin{codecaption}
-    \begin{inputcode}
-        \inputminted{c}{src/code/helloworld.c}
-    \end{inputcode}
-\caption{Ejemplo de Hello World! en C}
-\end{codecaption}
+Similar al código fuente.
+
+\begin{algorithm}[H]
+\caption{Un algoritmo con descripción}\label{alg:cap}
+\begin{algorithmic}
+\Require $n \geq 0$
+\Ensure $y = x^n$
+\State $y \gets 1$
+\State $X \gets x$
+\State $N \gets n$
+\While{$N \neq 0$}
+\If{$N$ is even}
+    \State $X \gets X \times X$
+    \State $N \gets \frac{N}{2}$  \Comment{Esto es un comentario}
+\ElsIf{$N$ is odd}
+    \State $y \gets y \times X$
+    \State $N \gets N - 1$
+\EndIf
+\EndWhile
+\end{algorithmic}
+\end{algorithm}

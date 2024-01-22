@@ -1,11 +1,22 @@
 % Template packages
-% Paquetes de la plantilla
+
+\usepackage{mathptmx}
+\renewcommand{\baselinestretch}{1.2}
+
+\usepackage{geometry}
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm,headsep=\dimexpr2.5cm-72pt\relax,headheight=72pt}
 
 \usepackage[skip=10pt plus1pt, indent=15pt]{parskip}
+
 \usepackage[spanish]{babel}
-\usepackage[left=3cm,right=3cm,top=3cm,bottom=3cm,headsep=\dimexpr3cm-72pt\relax,headheight=72pt]{geometry}
-\usepackage{inputenc}
+
+\usepackage[outputdir=build]{minted}
+\usemintedstyle{borland}
+
+\usepackage{mdframed}
 \usepackage{caption}
+\usepackage{setspace}
+\usepackage{inputenc}
 \usepackage{microtype}
 \usepackage{amsthm}
 \usepackage{amsmath}
@@ -22,4 +33,6 @@
 \usepackage{bookmark}
 \usepackage{titling}
 \usepackage{enumerate}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
 % \usepackage{tikz}

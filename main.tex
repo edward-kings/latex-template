@@ -1,23 +1,30 @@
-\documentclass[letterpaper]{article} % report or article switch
+\documentclass[letterpaper, 11pt]{article} % report/article
 \usepackage[T1]{fontenc}
-\usepackage{mathptmx}
-\renewcommand{\baselinestretch}{1.5}
 
 \input{lib/packages.tex}
 \input{lib/bib.tex}
 \input{lib/blocks.tex}
 \input{lib/code.tex}
 \input{lib/colors.tex}
-% \input{lib/page.tex} % top and bottom page borders (optional)
+% \input{lib/page.tex}
 
-\newcommand{\curso}{Curso}
 \author{Nombre Apellido}
-\title{TÍTULO}
+\title{Título del documento}
+
+\def\documentsubtitle {}
+\def\degreetitle {
+	Descripción del documento
+}
+\def\universityname {Universidad de Chile}
+\def\universityfaculty {Facultad de Ciencias Físicas y Matemáticas}
+\def\universitydepartment {Departamento de la Universidad}
+\def\universitylocation {Santiago - Chile}
 
 \begin{document}
 
 \input{chapters/cover.tex}
 \input{chapters/index.tex}
+\restoregeometry
 \input{chapters/chapter-1.tex}
 
 \newpage
@@ -26,4 +33,3 @@
 \bibliography{references}
 
 \end{document}
-

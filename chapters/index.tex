@@ -1,16 +1,26 @@
 % Index page
 
-\begin{minipage}{\textwidth}
+\begin{spacing}{1}
 
-    \renewcommand{\contentsname}{Índice de Contenidos}
-    \thispagestyle{empty}
-    \tableofcontents
+\renewcommand{\contentsname}{Índice de Contenidos}
+\thispagestyle{empty}
+\tableofcontents
 
-    % \renewcommand{\listfigurename}{Índice de Figuras}
-    % \listoffigures
-    % \renewcommand{\listtablename}{Índice de Tablas}
-    % \listoftables
-    % \listoflistings
-\end{minipage}
+\renewcommand{\listfigurename}{Índice de Figuras}
+\listoffigures
+
+\renewcommand{\listtablename}{Índice de Tablas}
+\listoftables
+
+\renewcommand\listoflistingscaption{Índice de Fragmentos de Código}
+\listoflistings
+
+\makeatletter
+\renewcommand{\ALG@name}{Algoritmo}
+\makeatother
+\renewcommand{\listalgorithmname}{Índice de Algoritmos}
+\listofalgorithms
+
+\end{spacing}
 
 \newpage

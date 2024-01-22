@@ -1,22 +1,47 @@
 % Cover page
 
 \thispagestyle{empty}
+\newgeometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+
+\begin{spacing}{1.1}
+
+\hspace*{-0.5cm}
+\includegraphics[width=0.11\textwidth]{src/img/university/uchile2.pdf}
+\hspace*{0.05cm}
+\begin{minipage}{0.8\linewidth}%
+    \MakeUppercase\universityname \\
+    \MakeUppercase\universityfaculty \\
+    \MakeUppercase\universitydepartment
+    \vspace*{1.6cm}\mbox{}%
+\end{minipage}
+
 \begin{center}
-    {\includegraphics[width=0.15\textwidth]{src/img/university/uchile2.pdf}\par}
-    \vspace{1cm}
-    {\bfseries\Large Universidad de Chile \par}
-    {\large Departamento de Ciencias de la Computación \par}
-    \vspace{2cm}
-    {\scshape\Large \thetitle \par}
-    {\itshape\large Subtítulo \par}
-    {\large \curso \par}
-    \vspace{1cm}
-    {Autor: \par}
-    {\theauthor \par}
-    \vspace{1cm}
-    {Profesor: \par}
-    {Nombre Apellido \par}
-    \vfill
-    {\large \today \par}
+        \vspace{0.5cm}
+        \MakeUppercase{\textbf{\thetitle}} \\
+        \vspace{1.5cm}
+        \MakeUppercase{\degreetitle} \\
+        \vfill
+        \begin{tabular}{c}
+            \vspace{0.5cm} \\
+            \MakeUppercase{\textbf{\theauthor}} \\ \\
+            \vspace{1cm} \\
+            PROFESOR: \\
+            NOMBRE APELLIDO \\
+            % \vspace{1cm} \\
+            % MIEMBROS DE LA COMISIÓN: \\
+            % PROFESOR 2 \\
+            % PROFESOR 3
+            % \vspace{1cm} \\
+            % Este trabajo ha sido parcialmente financiado por \\
+            % NOMBRE INSTITUCIÓN \\
+            \vspace{0.5cm} \\
+            \MakeUppercase{SANTIAGO DE CHILE} \\
+            \MakeUppercase{\today}
+        \end{tabular}
 \end{center}
+
+\end{spacing}
+
+\restoregeometry
+
 \newpage
