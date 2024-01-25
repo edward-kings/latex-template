@@ -14,7 +14,7 @@ The LaTeX template that I use for my university assignments.
 
 ### Working online
 
-We can work with this template directly on [Overleaf](https://www.overleaf.com/). To do this, we must upload it as a project and remove the parameter `[outputdir=build]` from `[\usepackage[outputdir=build]{minted}]` in `[/lib/code.tex]`
+We can work with this template directly on [Overleaf](https://www.overleaf.com/). To do this, we must upload it as a project and remove the parameter `[outputdir=build]` from `[\usepackage[outputdir=build]{minted}]` in `[/lib/packages.tex]`
 
 ### Working locally
 
