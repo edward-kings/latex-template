@@ -14,7 +14,7 @@ La plantilla de LaTeX que uso para mis tareas en la universidad
 
 ### Trabajar de manera en línea
 
-Podemos trabajar con esta plantilla directamente en [Overleaf](https://www.overleaf.com/). Para ello debemos subirla como proyecto y remover el parámetro `[outputdir=build]` de `[\usepackage[outputdir=build]{minted}]` en `[/lib/code.tex]`
+Podemos trabajar con esta plantilla directamente en [Overleaf](https://www.overleaf.com/). Para ello debemos subirla como proyecto y remover el parámetro `[outputdir=build]` de `[\usepackage[outputdir=build]{minted}]` en `[/lib/packages.tex]`
 
 ### Trabajar de manera local
 
